@@ -1,0 +1,528 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Portifólio</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfólio</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #cabecalho {
+      width: 100%;
+    }
+
+    ul {
+
+      text-align: center;
+
+    }
+
+    #cabecalho ul {
+      display: flex;
+      justify-content: center;
+      background-color: #413656;
+      list-style: none;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #cabecalho li {
+      text-align: center;
+    }
+
+    #cabecalho li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    #cabecalho li a:hover {
+      background-color: #111;
+      transition: color, 0.8s;
+    }
+
+    /*contato.html*/
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: rgb(187, 150, 178);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    button {
+      background-color: blue;
+      color: #cec7c7;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: rgb(46, 195, 61);
+    }
+
+    #depoimentos {
+      padding: 60px 20px;
+      background-color: #e1d7e837;
+      ;
+      text-align: center;
+    }
+
+    #depoimentos .subtitulo {
+      color: #000000;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .depoimento {
+      background-color: #ffffff;
+      border-radius: 9px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .depoimento img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .depoimento h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .depoimento p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    body {
+      background-color: #d9c5e6b9;
+    }
+
+    h3 {
+      color: #8142ab;
+      font-family: cursive;
+      text-align: center;
+    }
+
+    h4 {
+      color: #000000;
+      font-family: cursive;
+      text-align: center;
+    }
+
+
+
+    .aprendizado ul {
+      list-style-type: none;
+      color: #200537dc;
+      font-family: cursive;
+      text-align: center;
+    }
+
+
+    h1 {
+      color: #200537dc;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: #200537dc;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    form {
+      text-align: center
+    }
+
+    button {
+      background-color: #200537dc;
+      color: #cec7c7;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+    }
+
+    p {
+      color: #200537dc;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style-type: none;
+      color: rgba(128, 4, 4, 0.799);
+      font-family: cursive;
+      text-align: center;
+    }
+
+    ol {
+      list-style-type: none;
+      color: rgba(0, 0, 0, 0.799);
+      font-family: cursive;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="cabecalho">
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#introducao">Apresentação</a>
+          </li>
+          <li>
+            <a href="#historico">Histórico Profissional/Acadêmico</a>
+          </li>
+          <li>
+            <a href="#interesses">Interesses e especialidades Técnicas</a>
+          </li>
+          <li>
+            <a href="#contato">Contato e Redes Sociais</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  <header>
+
+    <body>
+      <main>
+        <!-- Introdução -->
+        <div id="introducao">
+          <div class="textoApresentacao">
+            <h1 class="titulo">Apresentação</h1><br>
+            <h3>Introdução</h3>
+            <p>Meu nome é <b>Sarah Miryam</b>, sou aluna do curso Fullstack. Estou no 2° ano do Ensino Médio Técnico
+              Integrado em Química. <br><em>Gosto de jogar Xadrez, assistir séries de ação e suspense, e de ler
+                livros.</em>
+              <br>
+              <img style="margin:15px; border-radius: 15%;" src="eu.jpg" width="100" />
+            </p>
+          </div>
+        </div>
+
+        <!-- Continuação -->
+        <div id="historico">
+          <h1 class="titulo">Histórico profissional/acadêmico</h1><br>
+          <h3>Histórico</h3>
+          <ul>
+            <progress value="100" max="100" style="width: 50%;"></progress>
+            <li>Curso de Introdução a Lógica da Programação</li>
+          </ul>
+          <p>Terminei um curso de introdução a lógica da programação utilizando o <b>Visualg</b>.</p>
+          <ul>
+            <progress value="50" max="100" style="width: 50%;"></progress>
+            <li>Curso de Robótica</li>
+          </ul>
+          <p>Estou participando de um curso de robótica onde aprendi a programar um robô utilizando o <b>Arduino</b>.
+          </p>
+          <ul>
+            <progress value="50" max="100" style="width: 50%;"></progress>
+            <li>Técnico em Química</li>
+          </ul>
+          <p>Estou no 2° ano do Ensino Médio Técnico Integrado em Química, onde aprendi as <b>práticas corretas em um
+              laboratório</b>.</p><br>
+
+          <div id="interesses">
+            <h1 class="titulo">Interesses e especialidades técnicas</h1><br>
+            <h3>Interesses</h3>
+            <ol>
+              <p>
+                <li>Terminar os cursos pendentes e o Ensino Médio.
+              </p>
+              </li>
+              <p>
+                <li>Ingressar na Faculdade de Medicina.
+              </p>
+              </li><br>
+            </ol>
+
+            <div id="contato">
+              <h1 class="titulo">Contato e Redes Sociais</h1>
+
+
+              <h3>Contatos</h3>
+              <ol>
+                <li>* Endereço: </li>
+                </p><br>
+                <p><em><b><i class="fa fa-map-pin wow fadeIn"></i> Rua Martina Filadélfia Suíça, Bairro Melúrio Tavares
+                      9964</b></em></p><br>
+                <p>
+                  <li>* Número de Whatsapp:</li>
+                </p><br>
+                <p><em><b> (81) 9 9799-9799</b></em>
+                  <i class="fab fa-whatsapp wow fadeIn"></i>
+                </p>
+              </ol><br>
+
+              </section>
+              <section>
+                <ol>
+                  <h3>Redes Sociais</h3>
+                  <p>
+                    <li><i class="fab fa-instagram wow fadeIn"></i> Instagram: <a
+                        href="https://www.instagram.com/angelinajolie/">@Sarah_eu</a></li>
+                  </p><br>
+                </ol>
+
+            </div>
+
+            <style>
+
+            </style>
+
+
+            <h1>Contato <a href="https://wa.me/5585981360256?text=fale%20comigo" target="_blank">
+                <i class="fab fa-whatsapp wow fadeIn"></i>
+              </a></h1>
+
+
+
+            <div class="container">
+              <form style="width: 75%;" action="mailto:railanemesquita34@gmail.com" method="post" enctype="text/plain">
+                <p>
+                  <label for="seu nome">Nome:</label>
+                  <input  style="width: 100%;" type="text" placeholder="Digite seu nome" id="seu nome" name="seu nome" required>
+                </p>
+
+                <p>
+                  <label for="endereco de email">Endereço de email:</label>
+                  <input  style="width: 100%;" id="endereco de email" name="endereco de email" type="text" placeholder="Digite seu email"
+                    required>
+                </p>
+
+                <p>
+                  <label for="assunto">Motivo do assunto:</label>
+                  <textarea  style="width: 100%;" id="assunto" name="assunto" placeholder="Escreva aqui o assunto" rows="4"
+                    required></textarea>
+                </p>
+
+                <p>
+                  <label for="telefone">Número de telefone:</label>
+                  <input style="width: 100%;" type="text" placeholder="número de telefone" id="telefone" name="telefone">
+                </p>
+
+                <p>
+                  <label for="mensagem">Mensagem:</label>
+                  <textarea style="width: 100%;" id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem" rows="4"
+                    required></textarea>
+                </p>
+
+                <p>
+                  <button type="submit">Enviar formulário</button>
+                </p>
+              </form>
+            </div>
+
+            </section>
+            <!-- Barra de habilidades -->
+            <div style="display:flex; flex-direction: column; margin: 50px; align-items: center;">
+              <h2>Habilidades</h2>
+              <span>Python</span>
+              <progress value="30" max="100" style="width: 50%;"></progress>
+              <span>HTML</span>
+              <progress value="50" max="100" style="width: 50%;"></progress>
+              <span>CSS</span>
+              <progress value="60" max="100" style="width: 50%;"></progress>
+            </div>
+
+            <section id="depoimentos">
+              <h2>Depoimentos</h2>
+              <p class="subtitulo">Veja o que os clientes dizem sobre mim</p>
+
+              <div class="container">
+                <div style="justify-items: center;" class="depoimento">
+                  <img src="https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg" alt="Foto de Ana Souza">
+                  <h3>Ana Souza</h3>
+                  <p>"O atendimento foi impecável! Resolveram meu problema com rapidez e eficiência. Super recomendo!"
+                  </p>
+                </div>
+
+                <div style="justify-items: center;" class="depoimento">
+                  <img
+                    src="https://st.depositphotos.com/3323581/4543/i/450/depositphotos_45434515-stock-photo-caucasian-male-face-portreit.jpg"
+                    alt="Foto de Carlos Lima">
+                  <h3>Carlos Lima</h3>
+                  <p>"Profissionalismo e atenção aos detalhes. Um dos melhores serviços que já contratei."</p>
+                </div>
+
+                <div style="justify-items: center;" class="depoimento">
+                  <img src="https://img.cdndsgni.com/preview/10217571.jpg" alt="Foto de Juliana Rocha">
+                  <h3>Juliana Rocha</h3>
+                  <p>"Fiquei muito satisfeita com o resultado final. Atendimento cordial e entrega dentro do prazo."</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Interesses -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fpr); justify-items: center;"
+              class="interesses">
+              <h2>Galeria de Fotos</h2>
+              <div class="galeria">
+                <img class="interesses"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC4fFIUPHYG9HT9TmIAO3n7ETfZMFclH_YOkrHh8Es4ufSBbWC83oKiZMWnVltROtd8Q0&usqp=CAU"
+                  width="220" />
+                <img class="interesses"
+                  src="https://www.horadecodar.com.br/wp-content/uploads/2022/04/programacao_00003.jpg" width="340" />
+                <img class="interesses"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFrAQqbsNKKcefsQgPq2GIvLPlFDZpvHc17w&s"
+                  width="380" />
+              </div>
+
+              <section>
+                <h3>Aprendizado</h3>
+                <h4>Atualmente, estou aprendendo três tecnologias para desenvolver para a web ou automatizar tarefas:
+                  HTML,
+                  CSS e Python.</h4>
+
+                <p style="align-items: center;">
+                  <h3>HTML</h3>
+                </p>
+                <p>🖼️ É a estrutura básica de qualquer página da web:</p>
+                <div style="justify-items: center;">
+                  <pre><code>&lt;header&gt;, &lt;section&gt;, &lt;article&gt; e &lt;footer&gt;</code></pre>
+                </div>
+
+                <p>Exemplo:</p>
+                <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1rem; border-radius: 6px;">
+                  <code>&lt;form aria-label="Formulário de Contato"&gt;
+                        &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                        &lt;input type="text" id="nome" name="nome" required&gt;
+                        
+                        &lt;label for="email"&gt;Email:&lt;/label&gt;
+                        &lt;input type="email" id="email" name="email" required&gt;
+
+                        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+                      &lt;/form&gt;
+                      </code></pre>
+                <p>Exemplo 2:</p>
+                <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1rem; border-radius: 6px;">
+                    <code>&lt;!DOCTYPE html&gt;
+                    &lt;html lang="pt-br"&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="UTF-8"&gt;
+                      &lt;title&gt;Minha Página&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                      &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;</code>
+                      </pre>
+                </form>
+                </p> <br><br>
+
+                <p style="align-items: center;">
+                  <h3>CSS</h3>
+                </p>
+                <h3>🎨 Define a aparência e o layout das páginas da web:</h3>
+                <p>Exemplo:</p>
+                <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1rem; border-radius: 6px;"><code>
+                    p {
+                      color: blue;
+                      font-size: 16px;
+                    }
+                    </code></pre><br><br>
+                
+                <p style="align-items: center;">
+                  <h3>Python</h3>
+                </p>
+                <h3>🐍 Pode Verificar se um número é par ou ímpar</h3>
+                <p>Exemplo:</p>
+                <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1rem; border-radius: 6px;">
+                      <code>numero = int(input("Digite um número: "))
+                      if numero % 2 == 0:
+                          print("É par.")
+                      else:
+                          print("É ímpar.")</code>
+                        </pre><br><br>
+
+                <div style="justify-items: center;">
+                  <h3>💬 Deixe seu comentário:</h3>                  
+                    <form style="display: flex; flex-direction: column; width: 500px;">
+                      <label for="nome">Nome:</label>
+                      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required
+                        style="padding: 0.5rem; margin-bottom: 1rem;">
+
+                      <label for="comentario">Comentário:</label>
+                      <textarea id="comentario" name="comentario" rows="4" placeholder="Escreva aqui seu comentário"
+                        required style="padding: 0.5rem; margin-bottom: 1rem;"></textarea>
+
+                      <button type="submit"
+                        style="background-color: #4caf50; color: white; padding: 0.7rem; border: none; border-radius: 4px; cursor: pointer;">
+                        Enviar
+                      </button>
+                    </form>                  
+                </div>
+              </section>
+            </div>
+      </main>
+
+      <div style="display: flex; justify-content: end;">
+        <a style="font-size: 35px;" href="#cabecalho">
+          <i class="fa-solid fa-circle-arrow-up"></i>
+        </a>
+      </div>
+
+      <hr>
+      <footer>
+        <p>Desenvolvido por Sarah Miryam</p>
+        <p>2025 - &copy; Todos os direitos reservados</p>        
+      </footer>
+    </body>
+</html>
